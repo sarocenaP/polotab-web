@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* COLORES POLO */
+:root {
+	
+	--bg-black: #000000;
+
+
+
+
+
+	--text-white: #ffffff;
+	--txt-gray-desc: #fff;
+}
+
+
+
+
+
+.desc-polo-black{
+	color: var(--txt-gray-desc);
+	opacity: 0.6;
+}
+
+
+.cont-max{
+	margin: 0 auto 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile: 0 – 479 */
+@media screen and (max-width: 479px) {
+
+	.cont-max{
+		max-width: 375px;
+	}
+ }
+
+/* 480 – 767 */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+	.cont-max{
+		max-width: 450px;
+	}
+
+ }
+
+/* 768 – 991 */
+@media screen and (min-width: 768px) and (max-width: 991px) { 
+
+	.cont-max{
+		max-width: 728px;
+	}
+}
+
+/* 992 – 1279 */
+@media screen and (min-width: 992px) and (max-width: 1279px) {
+	.cont-max{
+		max-width: 940px;
+	}
+ }
+
+/* 1280 – 1439 */
+@media screen and (min-width: 1280px) {
+	.cont-max{
+		max-width: 1224px;
+	}
+}
+
+/* 1440 -> */
+@media screen and (min-width: 1440px) {
+	.cont-max{
+		max-width: 1272px;
+	}
+}
