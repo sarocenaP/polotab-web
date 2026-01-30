@@ -4,13 +4,17 @@
 
 <script>
 	import Navbar from "$lib/components/Navbar.svelte";
+	import Breadcrumb from '$lib/components/Breadcrumb.svelte';
+
 </script>
 
-<Navbar variant="white" />
+<Navbar variant="light" />
 
 
-<main class="min-h-screen text-black">
-	<div class="mx-auto max-w-6xl px-6 py-16">
+<main class="main-white">
+	<div class="cont-max">
+		<Breadcrumb variant="light" current="Home"/>
+
 		<h1 class="text-4xl font-semibold tracking-tight">PoloTab</h1>
 		<p class="mt-3 text-lg text-neutral-600">
 			Canvas limpio. Desde acá armamos Landing, Pricing, Inventarios y Comandero.
