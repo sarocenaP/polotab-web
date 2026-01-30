@@ -9,7 +9,7 @@
 
 <Navbar variant="dark" />
 
-<main class="main-black" style="background: var(--bg-black); color: var(--text-white);">
+<main class="main-black" style="background: var(--bg-black); color: var(--txt-white);">
 	<div class="cont-max">
 		<div class="hero-planes">
 			<Breadcrumb variant="dark" current="Precios" />
@@ -27,7 +27,7 @@
 		flex-direction: column;
 	}
 	.desc-polo-black {
-		color: var(--txt-gray-desc);
+		color: var(--gray-desc-blackSite);
 		opacity: 0.6;
 	}
 </style>
