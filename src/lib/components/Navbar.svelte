@@ -17,7 +17,7 @@
 			<div class="dropdown">
 				<button type="button" class="dropdown-trigger-btn navbar-link">
 					Funcionalidades
-					<i class="fa-solid fa-chevron-down"></i>
+					<i class="icon-fa-12 fa-solid fa-chevron-down"></i>
 				</button>
 
 				<div class="dropdown-menu">
@@ -90,6 +90,7 @@
 
 	.navbar-link {
 		font-size: 14px;
+        line-height: 14px;
 		letter-spacing: 0.42px;
 	}
 
@@ -97,6 +98,8 @@
 	.navbar-link:hover {
 		color: var(--polo-blue);
 	}
+
+
 
 	/* Dropdown hover relative */
 	.dropdown {
@@ -106,7 +109,6 @@
 
 	.dropdown-trigger-btn {
 		display: inline-flex;
-		align-items: center;
 		gap: 5px;
 		cursor: pointer;
 	}

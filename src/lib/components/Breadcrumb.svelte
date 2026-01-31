@@ -3,7 +3,7 @@
 	export let variant: 'light' | 'dark' = 'light';
 </script>
 
-<nav aria-label="Breadcrumb" class="mb-8">
+<nav aria-label="Breadcrumb" class="breadcrumb-wrap">
 	<ol class="breadcrumb-list">
 		<!-- Link imagen y texto juntos-->
 		<li class="home-img-link">
@@ -15,7 +15,7 @@
 		</li>
 
 		<!-- icono separador  -->
-		<i class={`fa-solid fa-chevron-right ${variant === 'dark' ? 'icon-dark' : 'icon-light'}`}></i>
+		<i class={`icon-fa-14 fa-solid fa-chevron-right ${variant === 'dark' ? 'icon-dark' : 'icon-light'}`}></i>
 
 		<!-- Current page -->
 		<li class="bread-txt">
@@ -25,6 +25,7 @@
 </nav>
 
 <style>
+
 	.breadcrumb-list,
 	.home-link-wrap {
 		display: flex;
@@ -46,7 +47,6 @@
 	}
 
 	i {
-		font-size: 14px;
 		line-height: 24px;
 	}
 

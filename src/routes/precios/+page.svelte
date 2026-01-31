@@ -1,33 +1,57 @@
-<script>
-	import Navbar from '$lib/components/Navbar.svelte';
+<script lang="ts">
+	import HeroDuoLayout from '$lib/components/heroDuoLayout/HeroDuoLayout.svelte';
 	import Breadcrumb from '$lib/components/Breadcrumb.svelte';
+	import Navbar from '$lib/components/Navbar.svelte';
+	import ButtonsType from '$lib/components/ButtonsType.svelte';
+	import HeroMedia from '$lib/components/heroDuoLayout/HeroMedia.svelte';
 </script>
 
 <svelte:head>
-	<title>PoloTab | Planes y precios</title>
+	<title>PoloTab | Planes y precios para cafeterías y restaurantes</title>
 </svelte:head>
 
-<Navbar variant="dark" />
-
 <main class="main-black" style="background: var(--bg-black); color: var(--txt-white);">
-	<div class="cont-max">
-		<div class="hero-planes">
+	<Navbar variant="dark" />
+
+	<!-- ====================================================================================================== -->
+	<!-- ============================================ SECCION HERO ============================================ -->
+
+	<HeroDuoLayout tone="dark">
+		<div slot="content-hero-left" class="hero-structure-left">
 			<Breadcrumb variant="dark" current="Precios" />
+
 			<h1>Extremadamente intuitivo, demasiado capaz y ultra seguro</h1>
-			<p class="desc-polo-black">
+
+			<p class="hero-desc">
 				Descubre por qué nos eligen restaurantes y cafeterías en más de 36 ciudades de México.
 			</p>
+
+			<ButtonsType variant="link" href="#planes">
+				Planes y precios <i class="icon-fa-14 fa-solid fa-arrow-down"></i>
+			</ButtonsType>
 		</div>
-	</div>
+
+		<!-- Si todavía no tienes media, puedes dejarlo vacío o poner un placeholder -->
+		<div slot="content-media-left">
+			<HeroMedia
+				variant="youtube"
+				youtube={{
+					youtubeId: 'PvhRLDxWrRQ',
+					poster: '/tableSetup.jpg',
+					alt: 'Video demostración PoloTab',
+					buttonLabel: 'Cómo funciona'
+				}}
+			/>
+		</div>
+	</HeroDuoLayout>
+
+	<!-- ====================================================================================================== -->
 </main>
 
 <style>
-	.hero-planes {
+	.hero-structure-left {
 		display: flex;
 		flex-direction: column;
-	}
-	.desc-polo-black {
-		color: var(--gray-desc-blackSite);
-		opacity: 0.6;
+		gap: 12px;
 	}
 </style>

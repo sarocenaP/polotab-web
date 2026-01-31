@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 
+* {
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
 
 @font-face {
   font-family: "Roc Grotesk";
@@ -20,22 +24,22 @@
   font-display: swap;
 }
 
-
-
-
 body {
   font-family: "Roc Grotesk", system-ui, sans-serif;
 }
-a, button, ol{
+
+h1, a, button, ol, span{
 	font-weight: 500;
+}
+p{
+	font-weight: 400;
 }
 
 
 
 
+/* ====== COLORES POLO ====== */
 
-
-/* COLORES POLO */
 :root {
 	
 	--bg-black: #000000;
@@ -45,14 +49,37 @@ a, button, ol{
 
 
 	--txt-white: #ffffff;
-	--gray-desc-blackSite: #fff;
+	--gray-desc-blackSite: rgba(255, 255, 255, 0.6);
+	--gray-desc-WhiteSite: rgba(0, 0, 0, 0.6);
+
 }
 
 
 
 
+	/* button base */
 
+	.btn {
+		display: flex;
+		gap: 6px;
+		font-size: 14px;
+		display: flex;
+		height: 40px;
+		padding: 0 24px;
+		justify-content: center;
+		align-items: center;
+		border-radius: 24px;
+		backdrop-filter: blur(12px);
+		text-decoration: none;
+		cursor: pointer;
 
+	}
+	.icon-fa-14{
+		font-size:14px;
+	}
+	.icon-fa-12{
+		font-size:12px;
+	}
 
 
 
