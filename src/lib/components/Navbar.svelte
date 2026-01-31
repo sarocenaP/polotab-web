@@ -30,10 +30,9 @@
 
 		<!-- Right -->
 		<div class="navbar-links-wrap">
-            <a href="/TODOP" class="navbar-link">Soporte</a>
-            <a href="/TODOP" class="navbar-link">Portal</a>
-            <a href="/TODOP" class="navbar-link">Empieza con PoloTab</a>
-
+			<a href="/TODOP" class="navbar-link">Soporte</a>
+			<a href="/TODOP" class="navbar-link">Portal</a>
+			<a href="/TODOP" class="navbar-link">Empieza con PoloTab</a>
 		</div>
 	</nav>
 </header>
@@ -90,7 +89,7 @@
 
 	.navbar-link {
 		font-size: 14px;
-        line-height: 14px;
+		line-height: 14px;
 		letter-spacing: 0.42px;
 	}
 
@@ -98,8 +97,6 @@
 	.navbar-link:hover {
 		color: var(--polo-blue);
 	}
-
-
 
 	/* Dropdown hover relative */
 	.dropdown {
@@ -114,6 +111,7 @@
 	}
 
 	/* Escondido */
+	/* verificar el fondo del menu su blur y todo cuando haga el fondo de la navbar TODOP */
 	.dropdown-menu {
 		position: absolute;
 		top: calc(100% + 26px);
@@ -123,7 +121,6 @@
 		min-width: 220px;
 		padding: 12px 20px;
 		border-radius: 24px;
-		/* Escondido opac=0 y hidden - TODOP*/
 		opacity: 0;
 		visibility: hidden;
 		transform: translateY(-6px);

@@ -26,7 +26,7 @@
 				Descubre por qué nos eligen restaurantes y cafeterías en más de 36 ciudades de México.
 			</p>
 
-			<ButtonsType variant="link" href="#planes">
+			<ButtonsType variant="link" href="#section-planes">
 				Planes y precios <i class="icon-fa-14 fa-solid fa-arrow-down"></i>
 			</ButtonsType>
 		</div>
@@ -38,7 +38,7 @@
 				youtube={{
 					youtubeId: 'PvhRLDxWrRQ',
 					poster: '/tableSetup.jpg',
-					alt: 'Video demostración PoloTab',
+					alt: 'Video explicativo de los planes de PoloTab',
 					buttonLabel: 'Cómo funciona'
 				}}
 			/>

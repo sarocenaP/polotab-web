@@ -20,8 +20,10 @@
 				<img src={image.src} alt={image.alt} loading="eager" />
 			</div>
 		{:else}
+			<!-- podria sacar esto TODOP choma -->
 			<div class="fallback">Falta image.src</div>
 		{/if}
+		<!-- atajo else -->
 	{:else if youtube}
 		{#if !isPlaying}
 			<!-- CAPA 1: media -->
@@ -44,7 +46,7 @@
 			<div class="layer layer-media">
 				<!-- svelte-ignore element_invalid_self_closing_tag -->
 				<iframe
-					title="YouTube video"
+					title="Planes y Precios | PoloTab"
 					src={`https://www.youtube-nocookie.com/embed/${youtube.youtubeId}?autoplay=1&rel=0&modestbranding=1`}
 					allow="autoplay; encrypted-media; picture-in-picture"
 					allowfullscreen
@@ -52,14 +54,18 @@
 			</div>
 
 			<!-- si querés que el blur NO esté mientras se reproduce, lo apagamos con .is-playing -->
+			<!-- TODOP, no entiendo pq se esconde con hidden true, a probarlo -->
 			<div class="layer layer-glass" aria-hidden="true"></div>
 
 			<!-- UI arriba -->
 			<div class="layer layer-ui layer-ui--topright">
-				<button class="close" type="button" on:click={reset} aria-label="Cerrar video">✕</button>
+				<button class="close" type="button" on:click={reset} aria-label="Cerrar video">
+					<i class="icon-fa-14 fa-solid fa-x" aria-hidden="true"></i>
+				</button>
 			</div>
 		{/if}
 	{:else}
+	<!-- Podria sacar esto TODOP choma -->
 		<div class="fallback">Falta youtube config</div>
 	{/if}
 </div>
